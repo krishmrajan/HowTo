@@ -1,25 +1,54 @@
- #include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include <string.h>
-
-typedef struct{
-    long long l_value;
-} det;
-typedef  struct  { 
-   int age;
-   float weight;
-   det dt[10];
-} person;
-
-int main()
-{   void *pr = NULL;
-    person ptr;
-    //ptr = ( person)malloc(sizeof( person));
-    pr = ( person*)malloc(sizeof( person));
-    ptr.age = 10;
-    ptr.weight = 55.5;
+typedef struct {
+    char sz_CodeIndex[15];
+    int i_ValeurIndex;
     
-    memcpy(pr,&ptr,sizeof(person));
-    printf("%d", pr->weight);
- 
+} ST_TABINDEX;
+typedef struct   { 
+   
+   int i_IndexMax;
+   ST_TABINDEX st_Index[100];
+
+} ST_ADD_ARCHIVE;
+void *I_Malloc(long l_TailleDemandee) {
+    void *pv_Retour = malloc(l_TailleDemandee);
+    return (pv_Retour);
+}
+int main()
+{
+     void *ptr = NULL;
+     ST_ADD_ARCHIVE st_AddArchive = {0};
+
+     ST_ADD_ARCHIVE st_AddArchive2 = {0};
+    st_AddArchive.i_IndexMax = 50;
+    //strcpy(st_AddArchive.st_Index[0].sz_CodeIndex ,"test");
+    //strcpy(st_AddArchive.st_Index[1].sz_CodeIndex ,"test3");
+    int ret = 0;
+    for (int i =0 ; i<st_AddArchive.i_IndexMax ; i++) {
+
+ printf("index [%d] , sz_ CodeIndex Value [%d] \n" , i ,sizeof(st_AddArchive.st_Index[i].sz_CodeIndex ));
+       //strcpy(st_AddArchive.st_Index[i].sz_CodeIndex, "test");
+       //sprintf(st_AddArchive.st_Index[i].sz_CodeIndex,"",i);
+       //printf("index [%d] , sz_CodeIndex Value [%d] \n" , i,strlen(st_AddArchive2.st_Index[i].sz_CodeIndex ));
+      ret=  snprintf(st_AddArchive.st_Index[i].sz_CodeIndex, sizeof(st_AddArchive.st_Index[i].sz_CodeIndex),"%s","test");
+       printf("index [%d] , sz_ CodeIndex Value [%d] \n" , ret ,sizeof(st_AddArchive.st_Index[i].sz_CodeIndex ));
+    }
+     
+
+    ptr = I_Malloc(sizeof(ST_ADD_ARCHIVE));
+    //pt.nm.nml[0]="toto";
+    //ptr = ( ST_ADD_ARCHIVE*)malloc(sizeof(ST_ADD_ARCHIVE));
+  
+    memcpy(ptr,&st_AddArchive ,(sizeof(ST_ADD_ARCHIVE)));
+    
+    memcpy(&st_AddArchive2 ,ptr, (sizeof(ST_ADD_ARCHIVE)));
+    //printf("%f", ptr->name.nm[0]);
+    printf("%s\n",st_AddArchive2.st_Index[0].sz_CodeIndex);
+    printf("%d\n",st_AddArchive2.i_IndexMax);
+ /*   for (int i = 0 ; i < st_AddArchive2.i_IndexMax ; i++) {
+        printf("index [%d] , sz_CodeIndex Value [%d] \n" , i,strlen(st_AddArchive2.st_Index[i].sz_CodeIndex ));
+    }*/
+
 }
