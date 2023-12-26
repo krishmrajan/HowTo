@@ -1,0 +1,25 @@
+ #include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+
+typedef struct{
+    long long l_value;
+} det;
+typedef  struct  { 
+   int age;
+   float weight;
+   det dt[10];
+} person;
+
+int main()
+{   void *pr = NULL;
+    person ptr;
+    //ptr = ( person)malloc(sizeof( person));
+    pr = ( person*)malloc(sizeof( person));
+    ptr.age = 10;
+    ptr.weight = 55.5;
+    
+    memcpy(pr,&ptr,sizeof(person));
+    printf("%d", pr->weight);
+ 
+}
