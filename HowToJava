@@ -1,11 +1,11 @@
 HowToJava
 
 
-public class TravauxGTRepo implements TravauxRepository  {
+public class Repo implements Repository {
 
 	private JdbcClient jdbcClient = null;
 	
-	public TravauxGTRepo(JdbcClient jdbcClient) {
+	public Repo(JdbcClient jdbcClient) {
         this.jdbcClient = jdbcClient;
     }
 	@Override
