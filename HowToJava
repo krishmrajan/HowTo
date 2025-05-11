@@ -1,1 +1,52 @@
 HowToJava
+
+
+public class TravauxGTRepo implements TravauxRepository  {
+
+	private JdbcClient jdbcClient = null;
+	
+	public TravauxGTRepo(JdbcClient jdbcClient) {
+        this.jdbcClient = jdbcClient;
+    }
+	@Override
+	public Optional<TOTOTCLASSE> findById(Long TotoRacine) {
+		// TODO Auto-generated method stub
+		  String sql = "select *  from bookmarks where TOTO = :id";
+		        return jdbcClient.sql(sql).param("IdToto", IdToto).query(TOTOCLASSE.class).optional();
+	}
+
+	@Override
+	public List<TravauxGT> findByStatus(Long Status) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(TravauxGT travauxgt) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	static class TotoRowMapper implements RowMapper<TravauxGT> {
+        public static final TotoRowMapper INSTANCE = new TotoowMapper();
+        private TravauxGTRowMapper(){}
+
+        @Override
+        public ToTo mapRow(ResultSet rs, int rowNum) throws SQLException {
+            return new TravauxGT(
+                    rs.getLong("x"),
+                    rs.getLong("x"),
+                    rs.getString("xxx"),
+                    rs.getString("x")
+            );
+        }
+	}
+}
+
+spring.application.name=fr.aba.ged.svc
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:dcbapp
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
