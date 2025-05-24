@@ -14,7 +14,8 @@ https://www.concretepage.com/spring-boot/jdbcclient-sql-spring-boot
 
 https://www.tutorialspoint.com/springjdbc/springjdbc_preparedstatementsetter.htm
 
-https://docs.spring.io/spring-data/jdbc/old-docs/1.1.x/reference/htmlsingle/#d0e2506   => interesting to ref_cursor  ******
+https://docs.spring.io/spring-data/jdbc/old-docs/1.1.x/reference/htmlsingle/#d0e2506   => interesting to ref_cursor  ****** 24/05/2025
 
-https://blogs.oracle.com/developers/post/hikaricp-best-practices-for-oracle-database-and-spring-boot   ********
+https://blogs.oracle.com/developers/post/hikaricp-best-practices-for-oracle-database-and-spring-boot   ********    24/05/2025
 
+https://www.geeksforgeeks.org/spring-difference-between-rowmapper-and-resultsetextractor/  (very good for resultSetExtractor ) ****** 24/05/2025
