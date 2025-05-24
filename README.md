@@ -27,3 +27,6 @@ jdbcTemplate.query(SQL, new RowCallbackHandler() {
   public void processRow(ResultSet rs) throws SQLException {
     System.out.println("RowCallbackHandler ::" + rs.getString("productname"));
   }
+
+
+  https://o7planning.org/11663/spring-boot-spring-jdbc-and-spring-transaction  ------------->very interesting style coding for rowmapper <---------------------- 25/05/2025
