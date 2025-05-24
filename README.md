@@ -11,3 +11,5 @@ https://github.com/azzoti/CallAnonymousPLSQLUsingSpring/commits?author=azzoti
 
 
 https://www.concretepage.com/spring-boot/jdbcclient-sql-spring-boot
+
+https://www.tutorialspoint.com/springjdbc/springjdbc_preparedstatementsetter.htm
