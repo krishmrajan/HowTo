@@ -22,3 +22,8 @@ https://www.geeksforgeeks.org/spring-difference-between-rowmapper-and-resultsete
 
 
 https://mkyong.com/spring/spring-jdbctemplate-handle-large-resultset/     RowCallbackHandler interesting
+
+jdbcTemplate.query(SQL, new RowCallbackHandler() {
+  public void processRow(ResultSet rs) throws SQLException {
+    System.out.println("RowCallbackHandler ::" + rs.getString("productname"));
+  }
