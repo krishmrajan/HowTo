@@ -16,3 +16,5 @@ https://www.tutorialspoint.com/springjdbc/springjdbc_preparedstatementsetter.htm
 
 https://docs.spring.io/spring-data/jdbc/old-docs/1.1.x/reference/htmlsingle/#d0e2506   => interesting to ref_cursor  ******
 
+https://blogs.oracle.com/developers/post/hikaricp-best-practices-for-oracle-database-and-spring-boot   ********
+
