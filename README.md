@@ -6,3 +6,5 @@ https://github.com/lukas-krecan/shedlock-example/blob/master/src/main/java/net/j
 https://www.youtube.com/watch?v=DSl4xF5itaE    (distributed lock you tube ) 
 
 https://dzone.com/articles/multiple-cron-task-with-spring-boot-scheduler
+
+https://github.com/azzoti/CallAnonymousPLSQLUsingSpring/commits?author=azzoti
