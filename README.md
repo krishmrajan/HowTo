@@ -13,3 +13,6 @@ https://github.com/azzoti/CallAnonymousPLSQLUsingSpring/commits?author=azzoti
 https://www.concretepage.com/spring-boot/jdbcclient-sql-spring-boot
 
 https://www.tutorialspoint.com/springjdbc/springjdbc_preparedstatementsetter.htm
+
+https://docs.spring.io/spring-data/jdbc/old-docs/1.1.x/reference/htmlsingle/#d0e2506   => interesting to ref_cursor  ******
+
