@@ -19,3 +19,6 @@ https://docs.spring.io/spring-data/jdbc/old-docs/1.1.x/reference/htmlsingle/#d0e
 https://blogs.oracle.com/developers/post/hikaricp-best-practices-for-oracle-database-and-spring-boot   ********    24/05/2025
 
 https://www.geeksforgeeks.org/spring-difference-between-rowmapper-and-resultsetextractor/  (very good for resultSetExtractor ) ****** 24/05/2025
+
+
+https://mkyong.com/spring/spring-jdbctemplate-handle-large-resultset/     RowCallbackHandler interesting
