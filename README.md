@@ -8,3 +8,6 @@ https://www.youtube.com/watch?v=DSl4xF5itaE    (distributed lock you tube )
 https://dzone.com/articles/multiple-cron-task-with-spring-boot-scheduler
 
 https://github.com/azzoti/CallAnonymousPLSQLUsingSpring/commits?author=azzoti
+
+
+https://www.concretepage.com/spring-boot/jdbcclient-sql-spring-boot
