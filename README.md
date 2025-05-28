@@ -30,3 +30,5 @@ jdbcTemplate.query(SQL, new RowCallbackHandler() {
 
 
   https://o7planning.org/11663/spring-boot-spring-jdbc-and-spring-transaction  ------------->very interesting style coding for rowmapper <---------------------- 25/05/2025
+
+  https://www.youtube.com/watch?v=FvDSL3pSKNQ   (ProblemDetails ) Exception handling very import for 2/06/2025
