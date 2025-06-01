@@ -55,3 +55,5 @@ ResultSet result = statement.executeQuery();
 while (result.next()) {
     // Work with result
 }
+simplified jdbclient  good documentation
+https://docs.spring.io/spring-framework/reference/data-access/jdbc/core.html#jdbc-JdbcClient
